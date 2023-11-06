@@ -1,0 +1,29 @@
+# Clase Vehículo
+class Vehiculo:
+
+    def __init__(self, marca, modelo, color, matricula):
+        self.marca = marca
+        self.modelo = modelo
+        self.color = color
+        self.matricula = matricula
+
+    def __str__(self):
+        return f"Vehículo de marca {self.marca}, modelo {self.modelo}, color {self.color} y matrícula {self.matricula}"
+
+# Clase Empresa
+class Empresa:
+
+    def __init__(self, nombre, cif, actividad):
+        self.nombre = nombre
+        self.cif = cif
+        self.actividad = actividad
+
+    def __str__(self):
+        return f"Empresa de nombre {self.nombre}, cif {self.cif} y actividad {self.actividad}"
+
+# Creación dinámica de objetos
+def crear_vehiculo(marca, modelo, color, matricula):
+    return Vehiculo(marca, modelo, color, matricula)
+
+def crear_empresa(nombre, cif, actividad):
+    return Empresa(nombre, cif, actividad)
